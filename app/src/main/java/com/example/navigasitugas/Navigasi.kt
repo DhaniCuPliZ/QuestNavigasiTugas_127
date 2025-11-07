@@ -78,3 +78,9 @@ fun DataApp(
 }
 
 
+private fun cancelAndBackToFormulirku(navController: NavHostController) {
+    if (!navController.popBackStack(route = Navigasi.Formulirku.name, inclusive = false)) {
+        navController.navigate(Navigasi.Formulirku.name)
+    }
+}
+
