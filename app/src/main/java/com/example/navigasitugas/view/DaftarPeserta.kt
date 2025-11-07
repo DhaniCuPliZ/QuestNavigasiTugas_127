@@ -53,4 +53,12 @@ fun TampilData(
                 )
             )
         }
-    )
+    ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .padding(all = dimensionResource(id = R.dimen.padding_medium)),
+            verticalArrangement = Arrangement.spacedBy(
+                space = dimensionResource(id = R.dimen.padding_small)
+            )
+        )
