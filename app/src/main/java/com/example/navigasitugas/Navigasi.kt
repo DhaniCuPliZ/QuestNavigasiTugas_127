@@ -33,4 +33,12 @@ fun DataApp(
             navController = navController,
             startDestination = Navigasi.Homepage.name,
             modifier = Modifier.padding(paddingValues = isiRuang)
-        )
+        ) {
+
+            composable(route = Navigasi.Homepage.name) {
+                Awal(
+                    OnSubmitBtnClick = {
+                        navController.navigate(route = Navigasi.Detail.name)
+                    }
+                )
+            }
