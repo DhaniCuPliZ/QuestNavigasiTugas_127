@@ -57,3 +57,24 @@ fun DataApp(
                 )
             }
 
+            composable(route = Navigasi.Formulirku.name) {
+                Form(
+                    onBackBtnClick = {
+                        navController.popBackStack(
+                            route = Navigasi.Detail.name,
+                            inclusive = false
+                        )
+                    },
+                    OnSubmitBtnClick = {
+                        navController.navigate(route = Navigasi.Homepage.name) {
+                            popUpTo(Navigasi.Homepage.name)
+                            launchSingleTop = true
+                        }
+                    }
+                )
+            }
+        }
+    }
+}
+
+
