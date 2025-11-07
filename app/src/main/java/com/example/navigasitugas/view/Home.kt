@@ -68,3 +68,18 @@ fun Awal(
                 color = Color.Gray
             )
         }
+        Spacer(modifier = Modifier.height(50.dp))
+
+        Button(
+            onClick = OnSubmitBtnClick,
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
+            shape = RoundedCornerShape(50),
+            modifier = Modifier
+                .width(200.dp)
+                .height(50.dp)
+        ) {
+            Text(text = "Submit", fontSize = 18.sp, color = Color.White)
+        }
+
+    }
+}
