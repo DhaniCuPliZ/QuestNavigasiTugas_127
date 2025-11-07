@@ -1,4 +1,3 @@
-form.kt
 
 package com.example.navigasitugas.view
 
@@ -148,6 +147,34 @@ fun Form(modifier: Modifier = Modifier,
                             Text(text = item, modifier = Modifier.padding(start = 8.dp))
                         }
                     }
+
+                    Spacer(modifier = Modifier.height(30.dp))
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Button(
+                            onClick = onBackBtnClick,
+                            colors = ButtonDefaults.buttonColors(containerColor = Color.Gray),
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Kembali")
+                        }
+                        Spacer(modifier = Modifier.width(16.dp))
+                        Button(
+                            onClick = OnSubmitBtnClick,
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Submit")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
