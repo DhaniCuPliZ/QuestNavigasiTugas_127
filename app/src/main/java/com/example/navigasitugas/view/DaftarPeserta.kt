@@ -84,3 +84,13 @@ fun TampilData(
             ) {
                 Text(text = stringResource(id = R.string.back))
             }
+            Spacer(modifier = Modifier.height(15.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = OnSubmitBtnClick
+            ) {
+                Text(text = stringResource(id = R.string.form))
+            }
+        }
+    }
+}
