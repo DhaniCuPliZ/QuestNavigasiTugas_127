@@ -61,5 +61,30 @@ fun Form(modifier: Modifier = Modifier,
                 )
             ),
         contentAlignment = Alignment.TopCenter
-    )
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.fillMaxWidth()
+        ){
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        Brush.horizontalGradient(
+                            colors = listOf(Color(0xFF9C27B0), Color(0xFFE040FB))
+                        )
+                    )
+                    .padding(vertical = 24.dp)
+            ) {
+                Text(
+                    text = "Formulir Pendaftaran",
+                    color = Color.White,
+                    fontSize = 22.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+            }
+
 
